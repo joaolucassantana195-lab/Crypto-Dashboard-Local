@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux Cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cadastroscripts/style.css">
+</head>
+<body>
+    <div class="colormode d-flex justify-content-end">
+    <img id="colormode" src="images/sunwhite.png" alt="color-mode" onclick="colormode(event)">
+  </div>
+  <section>
+    <div class="container d-flex justify-content-center p-5">
+        <div class="login-card shadow rounded-4 p-4" id="container">
+            <h1>Flux</h1>
+            <h2>Cadastre-se</h2>
+            <form method="POST" novalidate>
+                <div class="form-group mb-3">
+                    <label for="cadastro" class="form-label">Nome</label>
+                    <input class="form-control" type="text" placeholder="Digite seu nome" id="inpname"></input>
+                    <span class="name"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="inpemail" type="email" name="email" id="email" placeholder="Digite seu email" class="form-control"></input>
+                    <span class="email"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="cadastro" class="form-label">Senha</label>
+                    <input id="inpsenha" type="password" name="senha" id="cadastro" placeholder="Digite uma Senha" class="form-control">
+                    <span class="senha"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="cadastro" class="form-label">Confirmar senha</label>
+                    <input id="inprepeat" type="password" name="senha" id="cadastro" placeholder="Repita sua senha" class="form-control">
+                    <span class="repeat"></span>
+                </div>
+                <button id="btn-enviar" class="btn btn-primary btn-lg w-100">Enviar</button>
+            </form>
+        <a href="login.html">Ja tenho uma conta</a>
+        </div>
+    </div>
+  </section> 
+  
+<script src="/cadastroscripts/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

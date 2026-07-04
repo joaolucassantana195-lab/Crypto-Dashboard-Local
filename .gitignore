@@ -1,0 +1,12 @@
+# Ambientes virtuais e editores
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Arquivos do sistema operacional
+DS_Store
+Thumbs.db
