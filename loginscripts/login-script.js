@@ -77,13 +77,16 @@ form.addEventListener(`submit`, async (event) => {
     if(resemail == false || respassw == false){
         return
     }
-        
-        window.location.href = "dashboard.html"
+        setTimeout(() => {
+             window.location.href = "dashboard.html"
+        }, 1000)
+       
         localStorage.setItem('visible', JSON.stringify(true))
         localStorage.setItem('usuariologado', JSON.stringify(iptemail.value))
 })
 
 function colormode(e){
+    e.preventDefault()
     let target = e.target
     if (thememode == "dark"){
         thememode = "white"

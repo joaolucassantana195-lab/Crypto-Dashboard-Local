@@ -187,10 +187,14 @@ function salvareenviar(){
         localStorage.setItem(`balance: ${usuario.nome}`, JSON.stringify(balance))
         localStorage.setItem(`Favoritos: ${usuario.nome}`, JSON.stringify(favoritos))
         localStorage.setItem(`MoedasAdquiridas:${usuario.nome}`, JSON.stringify(moedasadquiridas))
-        window.location.href = "login.html"
+        setTimeout(() => {
+             window.location.href = "login.html"
+        }, 1000);
+       
 }
 
 function colormode(e){
+    e.preventDefault()
     localStorage.setItem('thememode', JSON.stringify("dark"))
     let target = e.target
     if (thememode == "dark"){

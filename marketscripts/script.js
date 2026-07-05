@@ -35,8 +35,8 @@ let pesquisa = false;
 span.innerHTML = `Hello, ${usuario.nome.toUpperCase()}!`;
 
 if (colorback == "white") {
-  colormodeimg.src = "/images/moonblack.png";
-  offcolormodeimg.src = "/images/moonblack.png"
+  colormodeimg.src = "images/moonblack.png";
+  offcolormodeimg.src = "images/moonblack.png"
   colorback = "white";
   body.style = `background-color: rgb(209, 209, 209);`;
   nav.style = `background: linear-gradient(180deg, rgb(255, 255, 255), rgb(230, 230, 230));`;
@@ -54,8 +54,8 @@ if (colorback == "white") {
   border-color:rgb(0, 0, 0);`;
   }
 } else if (colorback == "dark") {
-  colormodeimg.src = "/images/sunwhite.png";
-  offcolormodeimg.src = "/images/sunwhite.png";
+  colormodeimg.src = "images/sunwhite.png";
+  offcolormodeimg.src = "images/sunwhite.png";
   colorback = "dark";
   body.style = `background-color: rgb(42, 42, 42);`;
   nav.style = `background-color:black;`;
@@ -137,9 +137,9 @@ async function buscarmoedas() {
       let img;
       let verif = fav.findIndex((f) => f.nome === name);
       if (verif == -1) {
-        img = "/images/favorito.png";
+        img = "images/favorito.png";
       } else {
-        img = "/images/favorito (1).png";
+        img = "images/favorito (1).png";
       }
       let newdivhot = document.createElement("div");
       divcoin.appendChild(newdivhot);
@@ -280,10 +280,10 @@ function favoritar(e, nome, preco, simbolo, iconlink, id) {
 
   if (verif == -1) {
     fav.push(moeda);
-    target.src = "/images/favorito (1).png";
+    target.src = "images/favorito (1).png";
   } else {
     fav.splice(verif, 1);
-    target.src = "/images/favorito.png";
+    target.src = "images/favorito.png";
   }
 
   localStorage.setItem(`Favoritos: ${usuario.nome}`, JSON.stringify(fav));
@@ -303,9 +303,9 @@ function clicknamoeda(e, name, id, symbol) {
 function colormode(e) {
   let target = e.target;
   if (colorback == "dark") {
-    target.src = "/images/moonblack.png";
-    offcolormodeimg.src = "/images/moonblack.png"
-  colormodeimg.src = "/images/moonblack.png"
+    target.src = "images/moonblack.png";
+    offcolormodeimg.src = "images/moonblack.png"
+  colormodeimg.src = "images/moonblack.png"
     colorback = "white";
     body.style = `background-color: rgb(209, 209, 209);`;
     nav.style = `background: linear-gradient(180deg, rgb(255, 255, 255), rgb(230, 230, 230));`;
@@ -323,9 +323,9 @@ function colormode(e) {
   border-color:rgb(0, 0, 0);`;
     }
   } else if (colorback == "white") {
-    target.src = "/images/sunwhite.png";
-    offcolormodeimg.src = "/images/sunwhite.png"
-    colormodeimg.src = "/images/sunwhite.png"
+    target.src = "images/sunwhite.png";
+    offcolormodeimg.src = "images/sunwhite.png"
+    colormodeimg.src = "images/sunwhite.png"
     colorback = "dark";
     body.style = `background-color: rgb(42, 42, 42);`;
     nav.style = `background-color:black;`;

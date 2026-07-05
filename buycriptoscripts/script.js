@@ -72,8 +72,8 @@ let pesquisa = false
 
 //funcao para buscar moedas quentes 
 if (colorback == "white"){
-  colormodeimg.src = "/images/moonblack.png"
-  offcolormodeimg.src = "/images/moonblack.png"
+  colormodeimg.src = "images/moonblack.png"
+  offcolormodeimg.src = "images/moonblack.png"
   colorback = "white"
   body.style = `background-color: rgb(209, 209, 209);`
   nav.style = `background: linear-gradient(180deg, rgb(255, 255, 255), rgb(230, 230, 230));`
@@ -166,8 +166,8 @@ if (colorback == "white"){
     transition:  font-size 0.2s ease-in-out;`
   }
   }else if (colorback == "dark"){
-    colormodeimg.src = "/images/sunwhite.png"
-    offcolormodeimg.src = "/images/sunwhite.png"
+    colormodeimg.src = "images/sunwhite.png"
+    offcolormodeimg.src = "images/sunwhite.png"
   colorback = "dark"
   body.style = `background-color: rgb(42, 42, 42);`
   nav.style = `background-color:black;`
@@ -553,9 +553,9 @@ function gerarultimosintervalos(quantidade = 15){
     let img
     let verif = fav.findIndex(f => f.nome === name)
     if (verif == -1){
-        img = "/images/favorito.png"
+        img = "images/favorito.png"
     }else{
-        img = "/images/favorito (1).png"
+        img = "images/favorito (1).png"
     }
     let newdivhot = document.createElement("div")
     droplist.appendChild(newdivhot)
@@ -813,9 +813,9 @@ if (operacao == "compra"){
 function colormode(e){
   let target = e.target
   if (colorback == "dark"){
-  target.src = "/images/moonblack.png"
-  offcolormodeimg.src = "/images/moonblack.png"
-  colormodeimg.src = "/images/moonblack.png"
+  target.src = "images/moonblack.png"
+  offcolormodeimg.src = "images/moonblack.png"
+  colormodeimg.src = "images/moonblack.png"
   colorback = "white"
   body.style = `background-color: rgb(209, 209, 209);`
   nav.style = `background: linear-gradient(180deg, rgb(255, 255, 255), rgb(230, 230, 230));`
@@ -907,9 +907,9 @@ function colormode(e){
     transition:  font-size 0.2s ease-in-out;`
   }
   }else if (colorback == "white"){
-    target.src = "/images/sunwhite.png"
-    offcolormodeimg.src = "/images/sunwhite.png"
-    colormodeimg.src = "/images/sunwhite.png"
+    target.src = "images/sunwhite.png"
+    offcolormodeimg.src = "images/sunwhite.png"
+    colormodeimg.src = "images/sunwhite.png"
   colorback = "dark"
   body.style = `background-color: rgb(42, 42, 42);`
   nav.style = `background-color:black;`

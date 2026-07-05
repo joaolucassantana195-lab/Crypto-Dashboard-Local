@@ -58,11 +58,11 @@ let divresulttext;
 //verificar visibilidade
 if (visible == false) {
   visible = false;
-  eye.src = `/images/closedeye.png`;
+  eye.src = `images/closedeye.png`;
   divbalance.innerHTML = `R$------`;
 } else if (visible == true) {
   visible = true;
-  eye.src = `/images/eye.png`;
+  eye.src = `images/eye.png`;
   divbalance.innerHTML = `${balancevalor.valor.toLocaleString("pt-BR",{style:"currency", currency:"BRL"})}`;
 }
 
@@ -75,8 +75,8 @@ if (favs == "" || favs == null){
 
 //verficar cor de fundo
 if (colorback == "white") {
-  colormodeimg.src = "/images/moonblack.png";
-  offcolormodeimg.src = "/images/moonblack.png"
+  colormodeimg.src = "images/moonblack.png";
+  offcolormodeimg.src = "images/moonblack.png"
   colorback = "white";
   body.style = `background-color: rgb(209, 209, 209);`;
   nav.style = `background: linear-gradient(180deg, rgb(255, 255, 255), rgb(230, 230, 230));`;
@@ -97,8 +97,8 @@ if (colorback == "white") {
   border-color:rgb(111, 111, 111);`;
   }
 } else if (colorback == "dark") {
-  colormodeimg.src = "/images/sunwhite.png";
-  offcolormodeimg.src = "/images/sunwhite.png"
+  colormodeimg.src = "images/sunwhite.png";
+  offcolormodeimg.src = "images/sunwhite.png"
   colorback = "dark";
   body.style = `background-color: rgb(42, 42, 42);`;
   nav.style = `background-color:black;`;
@@ -294,7 +294,7 @@ function buscarFavoritos() {
     divfav.appendChild(newdiv);
     newdiv.innerHTML = ` 
             <div id="moeda">
-           <span><img id="icone" onclick ="favoritar(event, '${nome}', '${preco}', '${simbolo}', '${icone}', '${moeda}')" src="/images/favorito (1).png" width= "20px" height= "20px"></img></span>
+           <span><img id="icone" onclick ="favoritar(event, '${nome}', '${preco}', '${simbolo}', '${icone}', '${moeda}')" src="images/favorito (1).png" width= "20px" height= "20px"></img></span>
            <a id="linkcoin" href="buypage.html" onclick="clicknamoeda(event,'${nome}','${id}','${simbolo}')">
             <div id="container-moeda">
             <img src= "${icone}" width= "20px" height= "20px"></img>
@@ -331,10 +331,10 @@ function favoritar(e, nome, preco, simbolo, iconlink, count) {
 
   if (verif == -1) {
     fav.push(moeda);
-    target.src = "/images/favorito (1).png";
+    target.src = "images/favorito (1).png";
   } else {
     fav.splice(verif, 1);
-    target.src = "/images/favorito.png";
+    target.src = "images/favorito.png";
     let divmoeda = document.querySelector(`#box-moeda${count}`);
     divmoeda.remove();
   }
@@ -407,11 +407,11 @@ if (dadosgrafico == "") {
 eye.addEventListener("click", () => {
   if (visible == true) {
     visible = false;
-    eye.src = `/images/closedeye.png`;
+    eye.src = `images/closedeye.png`;
     divbalance.innerHTML = `R$------`;
   } else if (visible == false) {
     visible = true;
-    eye.src = `/images/eye.png`;
+    eye.src = `images/eye.png`;
     divbalance.innerHTML = `R$${balancevalor.valor.toFixed(2)}`;
   }
   localStorage.setItem("visible", JSON.stringify(visible));
@@ -421,9 +421,9 @@ function colormode(e) {
   let target = e.target;
 
   if (colorback == "dark") {
-    target.src = "/images/moonblack.png";
-    offcolormodeimg.src = "/images/moonblack.png"
-    colormodeimg.src = "/images/moonblack.png"
+    target.src = "images/moonblack.png";
+    offcolormodeimg.src = "images/moonblack.png"
+    colormodeimg.src = "images/moonblack.png"
     colorback = "white";
     body.style = `background-color: rgb(209, 209, 209);`;
     nav.style = `background: linear-gradient(180deg, rgb(255, 255, 255), rgb(230, 230, 230));`;
@@ -444,9 +444,9 @@ function colormode(e) {
   border-color:rgb(111, 111, 111);`;
     }
   } else if (colorback == "white") {
-    target.src = "/images/sunwhite.png";
-    offcolormodeimg.src = "/images/sunwhite.png"
-    colormodeimg.src = "/images/sunwhite.png"
+    target.src = "images/sunwhite.png";
+    offcolormodeimg.src = "images/sunwhite.png"
+    colormodeimg.src = "images/sunwhite.png"
     colorback = "dark";
     body.style = `background-color: rgb(42, 42, 42);`;
     nav.style = `background-color:black;`;
