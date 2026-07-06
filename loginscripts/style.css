@@ -24,12 +24,12 @@ h2{
     text-align: center;
     margin-bottom: 20px;
 }
-.btn {
+#btn-enviar {
     background-color: rgb(255, 166, 0);
     border: none;
 }
 
-.btn:hover{
+#btn-enviar:hover{
     background-color: rgb(236, 154, 0);
 }
 
